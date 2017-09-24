@@ -17,9 +17,8 @@ class CommentTableViewCell: UITableViewCell {
     // Initialization code
   }
   
-  func setViewModel(viewModel: CommentViewModel) {
+  func setCellWith(viewModel: CommentViewModel) {
     self.nameLabel?.text = viewModel.nameText
     self.emailLabel?.text = viewModel.emailText
-    
   }
 }

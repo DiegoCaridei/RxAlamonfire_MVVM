@@ -21,9 +21,9 @@ class MainViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    APIClient.shared.get()
+    APIClient.shared.getCommentsFromWebServices()
       .bind(to: tableView.rx.items(cellIdentifier: Identifier.cellIdentifier.rawValue, cellType: CommentTableViewCell.self)  ) { (_,commentViewModel, cell) in
-        cell.setViewModel(viewModel: commentViewModel)
+        cell.setCellWith(viewModel: commentViewModel)
       }
       .disposed(by: disposeBag)
   }

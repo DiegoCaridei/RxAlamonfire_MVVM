@@ -15,16 +15,16 @@ import SwiftyJSON
 final class APIClient {
   
   internal enum Api : String {
-    case comments = "https://jsonplaceholder.typicode.com/comments"
+    case commentsURL = "https://jsonplaceholder.typicode.com/comments"
   }
   
   static let shared = APIClient()
   
   private init() { }
   
-  func get() -> Observable<[CommentViewModel]>{
+  func getCommentsFromWebServices() -> Observable<[CommentViewModel]>{
     return RxAlamofire
-      .request(.get, Api.comments.rawValue)
+      .request(.get, Api.commentsURL.rawValue)
       .flatMap {
         $0.validate(statusCode: 200..<300)
           .rx.json()

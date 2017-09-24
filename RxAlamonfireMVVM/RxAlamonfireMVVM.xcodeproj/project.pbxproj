@@ -65,6 +65,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F15443451F78035800DC09FA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F1EABA5F1F77FF6100BE361B /* LaunchScreen.storyboard */,
+				F1EABA5A1F77FF6000BE361B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F15443461F78036B00DC09FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1EABA5D1F77FF6000BE361B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F1EABA4A1F77FF6000BE361B = {
 			isa = PBXGroup;
 			children = (
@@ -86,14 +103,12 @@
 		F1EABA551F77FF6000BE361B /* RXAlamonfireMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F15443461F78036B00DC09FA /* Resources */,
 				F1EABA711F7800AB00BE361B /* ViewModel */,
 				F1EABA6E1F78008300BE361B /* Network */,
 				F1EABA6B1F78005D00BE361B /* Model */,
 				F1EABA681F77FFDE00BE361B /* View-Controller */,
 				F1EABA561F77FF6000BE361B /* AppDelegate.swift */,
-				F1EABA5A1F77FF6000BE361B /* Main.storyboard */,
-				F1EABA5D1F77FF6000BE361B /* Assets.xcassets */,
-				F1EABA5F1F77FF6100BE361B /* LaunchScreen.storyboard */,
 				F1EABA621F77FF6100BE361B /* Info.plist */,
 			);
 			path = RXAlamonfireMVVM;
@@ -102,6 +117,7 @@
 		F1EABA681F77FFDE00BE361B /* View-Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F15443451F78035800DC09FA /* Storyboards */,
 				F1EABA581F77FF6000BE361B /* MainViewController.swift */,
 				F1EABA691F78000A00BE361B /* CommentTableViewCell.swift */,
 			);
