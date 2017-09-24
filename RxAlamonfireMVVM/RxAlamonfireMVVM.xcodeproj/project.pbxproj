@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A605E8FE716A588A71CBE5D2 /* Pods_RXAlamonfireMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659A580B655E3B8F7C3A7B0E /* Pods_RXAlamonfireMVVM.framework */; };
 		F1EABA571F77FF6000BE361B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EABA561F77FF6000BE361B /* AppDelegate.swift */; };
-		F1EABA591F77FF6000BE361B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EABA581F77FF6000BE361B /* ViewController.swift */; };
+		F1EABA591F77FF6000BE361B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EABA581F77FF6000BE361B /* MainViewController.swift */; };
 		F1EABA5C1F77FF6000BE361B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EABA5A1F77FF6000BE361B /* Main.storyboard */; };
 		F1EABA5E1F77FF6000BE361B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1EABA5D1F77FF6000BE361B /* Assets.xcassets */; };
 		F1EABA611F77FF6100BE361B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1EABA5F1F77FF6100BE361B /* LaunchScreen.storyboard */; };
+		F1EABA6A1F78000A00BE361B /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EABA691F78000A00BE361B /* CommentTableViewCell.swift */; };
+		F1EABA6D1F78006F00BE361B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EABA6C1F78006F00BE361B /* Comment.swift */; };
+		F1EABA701F78008F00BE361B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EABA6F1F78008F00BE361B /* APIClient.swift */; };
+		F1EABA731F7800BA00BE361B /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EABA721F7800BA00BE361B /* CommentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4500C0CE57380BB46FA11166 /* Pods-RXAlamonfireMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXAlamonfireMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RXAlamonfireMVVM/Pods-RXAlamonfireMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		659A580B655E3B8F7C3A7B0E /* Pods_RXAlamonfireMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXAlamonfireMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F035588FDB826D7D6C174AFE /* Pods-RXAlamonfireMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXAlamonfireMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXAlamonfireMVVM/Pods-RXAlamonfireMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		F1EABA531F77FF6000BE361B /* RXAlamonfireMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXAlamonfireMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1EABA561F77FF6000BE361B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1EABA581F77FF6000BE361B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1EABA581F77FF6000BE361B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F1EABA5B1F77FF6000BE361B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1EABA5D1F77FF6000BE361B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1EABA601F77FF6100BE361B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1EABA621F77FF6100BE361B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1EABA691F78000A00BE361B /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		F1EABA6C1F78006F00BE361B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		F1EABA6F1F78008F00BE361B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F1EABA721F7800BA00BE361B /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A605E8FE716A588A71CBE5D2 /* Pods_RXAlamonfireMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F3B026ECC80FC87BF6C9970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				659A580B655E3B8F7C3A7B0E /* Pods_RXAlamonfireMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64D7FC79E756DCEB61F4FCCE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F035588FDB826D7D6C174AFE /* Pods-RXAlamonfireMVVM.debug.xcconfig */,
+				4500C0CE57380BB46FA11166 /* Pods-RXAlamonfireMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F1EABA4A1F77FF6000BE361B = {
 			isa = PBXGroup;
 			children = (
 				F1EABA551F77FF6000BE361B /* RXAlamonfireMVVM */,
 				F1EABA541F77FF6000BE361B /* Products */,
+				64D7FC79E756DCEB61F4FCCE /* Pods */,
+				5F3B026ECC80FC87BF6C9970 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +86,50 @@
 		F1EABA551F77FF6000BE361B /* RXAlamonfireMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F1EABA711F7800AB00BE361B /* ViewModel */,
+				F1EABA6E1F78008300BE361B /* Network */,
+				F1EABA6B1F78005D00BE361B /* Model */,
+				F1EABA681F77FFDE00BE361B /* View-Controller */,
 				F1EABA561F77FF6000BE361B /* AppDelegate.swift */,
-				F1EABA581F77FF6000BE361B /* ViewController.swift */,
 				F1EABA5A1F77FF6000BE361B /* Main.storyboard */,
 				F1EABA5D1F77FF6000BE361B /* Assets.xcassets */,
 				F1EABA5F1F77FF6100BE361B /* LaunchScreen.storyboard */,
 				F1EABA621F77FF6100BE361B /* Info.plist */,
 			);
 			path = RXAlamonfireMVVM;
+			sourceTree = "<group>";
+		};
+		F1EABA681F77FFDE00BE361B /* View-Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F1EABA581F77FF6000BE361B /* MainViewController.swift */,
+				F1EABA691F78000A00BE361B /* CommentTableViewCell.swift */,
+			);
+			path = "View-Controller";
+			sourceTree = "<group>";
+		};
+		F1EABA6B1F78005D00BE361B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1EABA6C1F78006F00BE361B /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F1EABA6E1F78008300BE361B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F1EABA6F1F78008F00BE361B /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F1EABA711F7800AB00BE361B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1EABA721F7800BA00BE361B /* CommentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1EABA651F77FF6100BE361B /* Build configuration list for PBXNativeTarget "RXAlamonfireMVVM" */;
 			buildPhases = (
+				35DADBEA1D8DEB1635C09027 /* [CP] Check Pods Manifest.lock */,
 				F1EABA4F1F77FF6000BE361B /* Sources */,
 				F1EABA501F77FF6000BE361B /* Frameworks */,
 				F1EABA511F77FF6000BE361B /* Resources */,
+				ECA22BFD3EB675E74904F5FF /* [CP] Embed Pods Frameworks */,
+				46A877DEF17A949734D628B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +202,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35DADBEA1D8DEB1635C09027 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXAlamonfireMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46A877DEF17A949734D628B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXAlamonfireMVVM/Pods-RXAlamonfireMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA22BFD3EB675E74904F5FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RXAlamonfireMVVM/Pods-RXAlamonfireMVVM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RXAlamonfireMVVM/Pods-RXAlamonfireMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1EABA4F1F77FF6000BE361B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1EABA591F77FF6000BE361B /* ViewController.swift in Sources */,
+				F1EABA731F7800BA00BE361B /* CommentViewModel.swift in Sources */,
+				F1EABA591F77FF6000BE361B /* MainViewController.swift in Sources */,
+				F1EABA6A1F78000A00BE361B /* CommentTableViewCell.swift in Sources */,
 				F1EABA571F77FF6000BE361B /* AppDelegate.swift in Sources */,
+				F1EABA701F78008F00BE361B /* APIClient.swift in Sources */,
+				F1EABA6D1F78006F00BE361B /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +413,7 @@
 		};
 		F1EABA661F77FF6100BE361B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F035588FDB826D7D6C174AFE /* Pods-RXAlamonfireMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +429,7 @@
 		};
 		F1EABA671F77FF6100BE361B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4500C0CE57380BB46FA11166 /* Pods-RXAlamonfireMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

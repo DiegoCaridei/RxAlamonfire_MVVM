@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import RxSwift
 
 class MainViewController: UIViewController {
 
+  internal enum Identifier : String {
+    case cellIdentifier = "cell"
+  }
+  
+  @IBOutlet weak var tableView: UITableView!
+  let disposeBag = DisposeBag()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    APIClient.shared.get()
+      .bind(to: tableView.rx.items(cellIdentifier: Identifier.cellIdentifier.rawValue, cellType: CommentTableViewCell.self)  ) { (_,commentViewModel, cell) in
+        cell.setViewModel(viewModel: commentViewModel)
+      }
+      .disposed(by: disposeBag)
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
 }
-
